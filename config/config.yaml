@@ -10,4 +10,9 @@ data_ingestion:
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/samsum_dataset
-  tokenizer_name: google/pegasus-cnn_dailymail
+  tokenizer_name: Falconsai/text_summarization
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  data_path: artifacts/data_transformation/samsum_dataset
+  model_ckpt: Falconsai/text_summarization
